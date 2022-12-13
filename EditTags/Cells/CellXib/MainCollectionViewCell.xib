@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainCollectionViewCell" id="gTV-IL-0wX" customClass="MainCollectionViewCell" customModule="EditTags" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="262"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="262"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryf-0A-JVJ">
+                        <rect key="frame" x="0.0" y="0.0" width="427" height="262"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWo-eb-qTp">
+                                <rect key="frame" x="0.0" y="0.0" width="427" height="0.0"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Mnd-tc-bQV"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKP-Bg-9U1">
+                                <rect key="frame" x="8" y="10" width="169" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3JY-kk-KXa"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" imagePadding="6">
+                                    <imageReference key="image" image="tag" catalog="system" symbolScale="small"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Edit Tags">
+                                            <attributes>
+                                                <font key="NSFont" size="13" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapEditTagsButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="dXF-Ru-Ax2"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4J-N0-yif">
+                                <rect key="frame" x="0.0" y="64" width="427" height="160"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your Tags" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYP-h6-orO">
+                                        <rect key="frame" x="8" y="10" width="411" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Tags" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RDD-Op-lKO">
+                                        <rect key="frame" x="8" y="44" width="411" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Ba8-iF-RrQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLn-A0-VpK">
+                                        <rect key="frame" x="120" y="99" width="187" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="2UW-eK-6gw"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Add Tags">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="Helvetica-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapAddTagButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ugS-SE-nOu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="qYP-h6-orO" firstAttribute="top" secondItem="l4J-N0-yif" secondAttribute="top" constant="10" id="8W7-z1-UTF"/>
+                                    <constraint firstAttribute="trailing" secondItem="RDD-Op-lKO" secondAttribute="trailing" constant="8" id="AiH-Mh-ew4"/>
+                                    <constraint firstAttribute="height" priority="999" constant="160" id="Iff-4u-jNn"/>
+                                    <constraint firstItem="qYP-h6-orO" firstAttribute="leading" secondItem="l4J-N0-yif" secondAttribute="leading" constant="8" id="MFk-sX-yyC"/>
+                                    <constraint firstAttribute="trailing" secondItem="qYP-h6-orO" secondAttribute="trailing" constant="8" id="QnI-OI-9wU"/>
+                                    <constraint firstItem="RDD-Op-lKO" firstAttribute="top" secondItem="qYP-h6-orO" secondAttribute="bottom" constant="10" id="SV7-MG-sqy"/>
+                                    <constraint firstItem="dLn-A0-VpK" firstAttribute="leading" secondItem="l4J-N0-yif" secondAttribute="leading" constant="120" id="iHh-xp-3No"/>
+                                    <constraint firstItem="RDD-Op-lKO" firstAttribute="leading" secondItem="l4J-N0-yif" secondAttribute="leading" constant="8" id="o7w-vd-6hY"/>
+                                    <constraint firstItem="dLn-A0-VpK" firstAttribute="top" secondItem="RDD-Op-lKO" secondAttribute="bottom" constant="10" id="qtW-0W-DW8"/>
+                                    <constraint firstAttribute="trailing" secondItem="dLn-A0-VpK" secondAttribute="trailing" constant="120" id="wju-fP-ivB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l4J-N0-yif" firstAttribute="leading" secondItem="ryf-0A-JVJ" secondAttribute="leading" id="8Qg-Ih-lPJ"/>
+                            <constraint firstAttribute="trailing" secondItem="l4J-N0-yif" secondAttribute="trailing" id="8Zb-u7-Uuc"/>
+                            <constraint firstItem="EKP-Bg-9U1" firstAttribute="leading" secondItem="ryf-0A-JVJ" secondAttribute="leading" constant="8" id="Jio-Nm-x0P"/>
+                            <constraint firstAttribute="height" priority="999" constant="218" id="SDj-Fq-9e2"/>
+                            <constraint firstItem="qWo-eb-qTp" firstAttribute="leading" secondItem="ryf-0A-JVJ" secondAttribute="leading" id="Uw5-to-XsO"/>
+                            <constraint firstItem="l4J-N0-yif" firstAttribute="top" secondItem="EKP-Bg-9U1" secondAttribute="bottom" constant="10" id="fMR-OT-2FS"/>
+                            <constraint firstAttribute="trailing" secondItem="qWo-eb-qTp" secondAttribute="trailing" id="i6d-n8-3ne"/>
+                            <constraint firstItem="EKP-Bg-9U1" firstAttribute="top" secondItem="qWo-eb-qTp" secondAttribute="bottom" constant="10" id="lKr-Vz-V51"/>
+                            <constraint firstAttribute="trailing" secondItem="EKP-Bg-9U1" secondAttribute="trailing" constant="250" id="ntt-0c-rpX"/>
+                            <constraint firstItem="qWo-eb-qTp" firstAttribute="top" secondItem="ryf-0A-JVJ" secondAttribute="top" id="xhE-zP-dmz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ryf-0A-JVJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7UJ-XL-BoE"/>
+                <constraint firstAttribute="trailing" secondItem="ryf-0A-JVJ" secondAttribute="trailing" id="fOt-gk-QaB"/>
+                <constraint firstAttribute="bottom" secondItem="ryf-0A-JVJ" secondAttribute="bottom" id="hRU-Lt-k3P"/>
+                <constraint firstItem="ryf-0A-JVJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iGd-RI-BKz"/>
+            </constraints>
+            <size key="customSize" width="427" height="228"/>
+            <connections>
+                <outlet property="addTagUIView" destination="l4J-N0-yif" id="JI3-KJ-BUV"/>
+                <outlet property="addTagUIViewHeight" destination="Iff-4u-jNn" id="pDG-VI-mbh"/>
+                <outlet property="addTagsButton" destination="dLn-A0-VpK" id="JAF-kq-E5O"/>
+                <outlet property="editTagsButton" destination="EKP-Bg-9U1" id="QmY-Yr-Kag"/>
+                <outlet property="editTagsButtonHeight" destination="3JY-kk-KXa" id="8Dh-SA-IfF"/>
+                <outlet property="listTagsUIView" destination="qWo-eb-qTp" id="4Ab-N7-JIG"/>
+                <outlet property="listTagsUiViewHeightConstraints" destination="Mnd-tc-bQV" id="DmE-zo-7tc"/>
+                <outlet property="mainCellContentUIView" destination="ryf-0A-JVJ" id="top-GR-f0X"/>
+                <outlet property="mainCellContentUIViewHeight" destination="SDj-Fq-9e2" id="4Ya-lH-rGj"/>
+                <outlet property="tagsInputField" destination="RDD-Op-lKO" id="Wdl-NU-dCE"/>
+            </connections>
+            <point key="canvasLocation" x="320.76923076923077" y="50.473933649289094"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="tag" catalog="system" width="128" height="118"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
